@@ -90,3 +90,84 @@ width: auto;
 .form-control {
 	border-radius: 1px;
 }
+
+/*.grid {
+	background-color: lightgrey;
+}*/
+
+#video-background {
+/*  making the video fullscreen  */
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
+}
+
+@media screen and (max-width:610px){
+
+	h2#Make{
+		font-size: 2em;
+	}
+	h2#Model {
+		font-size: 2em;
+	}
+}
+
+@media screen and (max-width:500px){
+
+	h2#Make{
+		font-size: 1.5em;
+	}
+
+	h2#Model {
+		font-size: 1.5em;
+	}
+
+	.CameraInfo p{
+		font-size: 0.8em;
+	}
+}
+
+@media screen and (max-width:450px){
+
+	h2#Make{
+		font-size: 1.25em;
+	}
+
+	h2#Model {
+		font-size: 1.25em;
+	}
+
+	.CameraInfo p{
+		font-size: 0.8em;
+	}
+
+	.data {
+		margin-left: 223px;
+	}
+}
+
+
+@media screen and (max-width:436px){
+
+	h2#Make{
+		font-size: 1.1em;
+	}
+
+	h2#Model {
+		font-size: 1.1em;
+	}
+
+	.CameraInfo p{
+		font-size: 0.8em;
+	}
+
+	.data {
+		margin-left: 219px;
+	}
+}
+
