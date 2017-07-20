@@ -8,7 +8,7 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 			controller: 'MainController'
 		})
 
-		.when('/lenses.html', {
+		.when('/lenses', {
 			templateUrl: 'views/lenses.html',
 			controller: 'LensesController'
 		})

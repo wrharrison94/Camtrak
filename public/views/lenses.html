@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse navbar-fixed-top">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
@@ -18,10 +18,10 @@
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav navbar-right">
-		        <li><a href="https://www.bhphotovideo.com/">B&H Photo/Video</a></li>
-		        	<li><a href="home.html">Cam Trakking</a></li>
-		         		<li><a href="lenses.html">Lens Trakking</a></li>
-		         			<li><a href="euqipment.html">Equipment tracking</a></li>
+		      	<li><a href="https://www.bhphotovideo.com/">B&H Photo/Video</a></li>
+		        	<li><a href="../home">Cam Trakking</a></li>
+		         		<li><a href="../lenses">Lens Trakking</a></li>
+		          			<li><a href="equipment.html">Equipment Trakking</a></li>
 		        <!--<li class="dropdown">
 		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
 		          <ul class="dropdown-menu">
@@ -39,9 +39,13 @@
 
 		<div class="row">
 
-			<div class="grid col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<div class="grid">
 
-				<div class="data col-lg-10 col-md-10 col-sm-10 col-xs-9">
+			<video autoplay loop id="video-background" muted plays-inline>
+  				<source src="https://ak9.picdn.net/shutterstock/videos/5540219/preview/stock-footage-vintage-film-reel-extreme-close-up.mp4" type="video/mp4">
+			</video>
+
+				<div class="data">
 
 					<div class="cameras" ng-repeat="x in cameras">
 
