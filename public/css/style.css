@@ -19,11 +19,10 @@
 }
 
 .leftbar {
-	background-color: grey;
-	height: 100%;
+	background: -webkit-linear-gradient(#706969, #544f4f);	height: 100%;
 	width: auto;
 	float: left;
-	top: 51px;
+	top: 50px;
 	left: 0px;
 }
 
@@ -169,5 +168,10 @@ width: auto;
 	.data {
 		margin-left: 219px;
 	}
+}
+
+.navbar {
+	background: -webkit-linear-gradient(#544f4f, #706969 );
+	border: 0px;
 }
 
