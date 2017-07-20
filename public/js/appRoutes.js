@@ -13,8 +13,8 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 			controller: 'LensesController'
 		})
 
-		.when('/euqipment.html', {
-			templateUrl: 'views/euqipment.html',
+		.when('/equipment', {
+			templateUrl: 'views/equipment.html',
 			controller: 'EquipmentController'	
 		});
 

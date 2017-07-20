@@ -1,0 +1,120 @@
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		            <a class="navbar-brand">EQUIPMENTTRAK 
+		            <span class="glyphicon glyphicon-facetime-video" href="home.html" style="font-size: 15px;"></span>
+		      		</a>
+			</div>
+
+
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav navbar-right">
+		      	<li><a href="https://www.bhphotovideo.com/">B&H Photo/Video</a></li>
+		        	<li><a href="../home">Cam Trakking</a></li>
+		         		<li><a href="../lenses">Lens Trakking</a></li>
+		          			<li><a href="../equipment">Equipment Trakking</a></li>
+		        <!--<li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">Action</a></li>
+		            <li><a href="#">Another action</a></li>
+		            <li><a href="#">Something else here</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="#">Separated link</a></li>
+		          </ul>
+		        </li>-->
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+	</nav>
+
+		<div class="row">
+
+			<div class="grid">
+
+			<video autoplay loop id="video-background" muted plays-inline>
+  				<source src="../public/resources/lens.mov"> <!-- why isn't this working? -->
+			</video>
+
+				<div class="data">
+
+					<div class="cameras" ng-repeat="x in cameras">
+
+						<div class=Camera>
+
+							<div class=header>
+
+							<h2 id=Make>{{x.Make | uppercase}}</h2>
+
+							<h2 id=Model>{{x.Model}}</h2>
+
+							</div>
+
+							<div class=CameraInfo>
+
+							<p id=Camera_Set_Location><b>Location: </b> {{x.Camera_Set_Location}} </p>
+
+							<p id=Camera_Operator><b>Operator: </b> {{x.Camera_Operator}} </p>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+				
+				<div class="leftbar affix col-lg-2 col-md-2 col-sm-2 col-xs-3">
+
+					<div class="forms">
+						<div id="all_forms" class="input-forms" style="margin: auto;">
+							<div name="input-group" style="width: 100%;">
+
+							<input id="id" type="text" class="form-control" placeholder="ID" ng-model="camera.id">
+							</div>
+
+							<div class="input-group" style="width: 100%;">
+						  	<input id="make" type="text" class="form-control" aria-label=# placeholder="Make" ng-model="camera.Make">
+							</div>
+
+							<div class="input-group" style="width: 100%;">		 
+						  	<input id="model" type="text" class="form-control" aria-label=# placeholder="Model" ng-model="camera.Model">
+							</div>
+
+						<!-- <div class="input-group" style="width: 100%;">		 
+						  	<input id="model" type="text" class="form-control" aria-label=# placeholder="Insured Value">
+						</div> -->
+
+							<div class="input-group" style="width: 100%;">
+						  	<input id="location" type="text" class="form-control" aria-label=# placeholder="Camera Location" ng-model="camera.Camera_Set_Location">
+							</div>
+
+							<div class="input-group" style="width: 100%;">	 
+						 	<input id="operator" type="text" class="form-control" aria-label=# placeholder="Camera Operator" ng-model="camera.Camera_Operator"> 
+							</div>
+
+						<!-- <div class="input-group" style="width: 100%;">	 
+						 	 <input id="resolution" type="text" class="form-control" aria-label=# placeholder="Resolution"> 
+						</div>
+
+						<div class="input-group" style="width: 100%;">	 
+						 	 <input id="resolution" type="text" class="form-control" aria-label=# placeholder="Resolution"> 
+						</div>
+	 -->
+							<button ng-click = "save()" id="submit" style="margin-top: 15px; width: 100%;" type="submit" class="btn btn-default">Submit</button>
+					</div>
+				</div>
+					
+			</div>
+		</div>
+		
+	</div>
