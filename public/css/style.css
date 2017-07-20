@@ -1,0 +1,92 @@
+/*body { padding-top:30px; }*/
+
+.body {
+	margin: 0px 0px 0px 0px; 
+	width: 100%
+	height:100%;
+	background-color: lightgrey;
+}
+
+.row {
+	margin: 0px;
+}
+
+.grid {
+/*	outline: solid;*/
+	margin-top: 51px;
+/*	height: 600px;*/
+
+}
+
+.leftbar {
+	background-color: grey;
+	height: 100%;
+	width: auto;
+	float: left;
+	top: 51px;
+	left: 0px;
+}
+
+.grid {
+	padding:0px;
+}
+
+.data {
+	height: auto;
+	width: auto;
+	display: inline-block;
+	margin-bottom: 20px;
+	margin-top: 10px; 
+	margin-left: 230px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.forms {
+	margin-top: 20px;
+}
+
+.cameras {
+/*	outline: solid;*/
+/*	margin-left: 200px;*/
+width: auto;
+}
+
+.Camera {
+	height: auto;
+	background-color: white;
+	border-radius: 6px;
+	padding: 12px 12px 12px 12px;
+	margin-top: 10px; 
+}
+
+.header {
+	width: auto;
+}
+
+.header h2 {
+	display: inline;
+}
+
+#Make {
+	font-weight: bolder;
+	font-size: 40px;
+	margin-top: 11px;
+}
+#Model {
+	font-size: 40px;
+	font-weight: lighter;
+	text-transform: uppercase;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right:11px;
+}
+
+.CameraInfo {
+	margin-top: 10px;
+	margin-left: 2px;
+} 
+
+.form-control {
+	border-radius: 1px;
+}
