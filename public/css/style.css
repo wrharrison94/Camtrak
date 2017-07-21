@@ -181,15 +181,19 @@ width: auto;
 }
 
 .navbar {
-	background: -webkit-linear-gradient(#404444, #535959);
+	background: -webkit-linear-gradient(10% black, black);
 	border: 0px;
 }
 
 .navbar-header a {
-	font-size: 1.5em;
+	font-size: 2.15em;
 }
 
 button#delete {
 	background: -webkit-linear-gradient(white,#535959);
 
+}
+
+.nav span {
+	margin-left: 10px;
 }
