@@ -18,7 +18,7 @@ $scope.save = function(){
 				if (err){
 					console.log(err)
 				}else{
-					alert("Your camera is being trakked!")
+					// alert("Your camera is being trakked!")
 				}
 				console.log(response.data);
 				$scope.cameras = response.data;
