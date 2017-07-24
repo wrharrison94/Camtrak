@@ -13,9 +13,9 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 			controller: 'LensesController'
 		})
 
-		.when('/equipment', {
-			templateUrl: 'views/equipment.html',
-			controller: 'EquipmentController'	
+		.when('/operator', {
+			templateUrl: 'views/operator.html',
+			controller: 'Controller'	
 		});
 
 	$locationProvider.html5Mode(true);
