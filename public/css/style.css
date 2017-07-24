@@ -19,7 +19,7 @@
 }
 
 .leftbar {
-	background: -webkit-linear-gradient(#535959,#404444);
+	background: -webkit-linear-gradient(#172624, #152825);
 	height: 100%;
 	width: auto;
 	float: left;
@@ -181,7 +181,7 @@ width: auto;
 }
 
 .navbar {
-	background: -webkit-linear-gradient(10% black, black);
+	background: -webkit-linear-gradient(#152825, #172624);
 	border: 0px;
 }
 
