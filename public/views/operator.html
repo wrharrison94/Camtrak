@@ -10,24 +10,28 @@
 
 					<div class="cameras" ng-repeat="x in cameras">
 
-						<div class=Camera>
+						<div ng-if="x.operator == {{operator}}">
 
-							<div class=header>
+							<div class=Camera>
 
-							<h2 id=Make>{{x.Make | uppercase}}</h2>
+								<div class=header>
 
-							<h2 id=Model>{{x.Model}}</h2>
+								<h2 id=Make>{{x.Make | uppercase}}</h2>
+
+								<h2 id=Model>{{x.Model}}</h2>
+
+								</div>
+
+								<div class=CameraInfo>
+
+								<p id=Camera_Set_Location><b>Location: </b> {{x.Camera_Set_Location}} </p>
+
+								<p id=Camera_Operator><b>Operator: </b> {{x.Camera_Operator}} </p>
+
+								</div>
 
 							</div>
-
-							<div class=CameraInfo>
-
-							<p id=Camera_Set_Location><b>Location: </b> {{x.Camera_Set_Location}} </p>
-
-							<p id=Camera_Operator><b>Operator: </b> {{x.Camera_Operator}} </p>
-
-							</div>
-
+							
 						</div>
 
 					</div>
