@@ -180,6 +180,8 @@ width: auto;
 	}
 }
 
+
+
 .navbar {
 	background: -webkit-linear-gradient(#152825, #172624);
 	border: 0px;
@@ -196,4 +198,18 @@ button#delete {
 
 .nav span {
 	margin-left: 10px;
+}
+
+select.dropdown {
+	margin-top: 15px;
+	margin-left: 10px;
+}
+
+button.go {
+	margin-left: 10px;
+	margin-right: 10px;
+	border-radius: 100%;
+	margin-top: 14px;
+	font-size: 10px;
+	padding: 3px; 
 }
