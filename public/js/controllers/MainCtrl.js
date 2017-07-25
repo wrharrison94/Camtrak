@@ -30,5 +30,6 @@ $scope.save = function(){
 	};
 	$scope.PrintOP = function(){
 		console.log('hello');
+		console.log($scope.activeOperator);
 	}
 });	
