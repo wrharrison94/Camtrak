@@ -15,7 +15,7 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 
 		.when('/operator', {
 			templateUrl: 'views/operator.html',
-			controller: 'Controller'	
+			controller: 'OperatorController'	
 		});
 
 	$locationProvider.html5Mode(true);
