@@ -19,7 +19,7 @@ $scope.activeOperator = function(){
 				$scope.camera.Camera_Operator = response.data;
 			});
 
-		});
-	
 	};
+	
+	//};
 });	

@@ -2,14 +2,16 @@ angular.module('OperatorService', []).factory('Operator', ['$http', function($ht
 
 	// $scope.activeOperator='{{activeOperator}}';
 
-	var operator 
+	var operator;
+	return{ 
 
-	addOperator: function (activeOperator){
+	addOperator: function(activeOperator){
 
-		operator=activeOperator,
+		operator=activeOperator;
 
-	};
+	}
 
+}
 
 
 }]);
