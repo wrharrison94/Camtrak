@@ -1,6 +1,6 @@
 angular.module('OperatorCtrl', []).controller('OperatorController', function($scope,$http) {
 
-	$scope.tagline = 'To the moon and back!';
+	$scope.activeOperator='{{activeOpertaor}}';
 	
 	// $scope.camera ={};
 		$http.get("http://camtrak-demo-app.herokuapp.com/CameraData").then(function (response){
