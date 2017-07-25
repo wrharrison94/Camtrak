@@ -28,7 +28,7 @@ $scope.save = function(){
 		});
 	
 	};
-	$scope.PrintOP = function(){
+	$scope.printOP = function(){
 		console.log('hello');
 		console.log($scope.activeOperator);
 	}
