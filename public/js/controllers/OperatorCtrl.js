@@ -8,7 +8,7 @@ angular.module('OperatorCtrl', []).controller('OperatorController', function($sc
 			$scope.cameras = response.data;
 		});
 	
-$scope.activeOperator. = function(){
+$scope.activeOperator = function(){
 		
 
 			$http.get("http://camtrak-demo-app.herokuapp.com/CameraData").then(function (response,err){

@@ -65,15 +65,21 @@
 		          <ul class="dropdown-menu">
 		            <li><a href="../home">Cameras</a></li>
 		            <li><a href="../lenses">Lenses</a></li>
-					<li><a href="../operator">Operator</a></li>
-		            <li role="separator" class="divider"></li>
-		            <li><a  href="../operator" ng.click="active.Operator()" id="operator1">Bill Kreutzman</a></li>
-		            <li><a href="../operator" ng.click="active.Operator()" id="operator2" >Bob Weir</a></li>
-		            <li><a  href="../operator" ng.click="active.Operator()" id="operator3"></a></li>
-		            <li><a  href="../operator" ng.click="active.Operator()" id="operator4">Operator</a></li>
-		            <li><a  href="../operator" ng.click="active.Operator()" id="operator5">Operator</a></li>
 		          </ul>
 		        </li>
+					<li>
+						<select class="dropdown" ng-model="activeOperator">
+						<option value="Bill">Bill Kreutzmann</option>
+						<option value="Bob"> Bob Weir</option>
+						<option value="Jerry">Jerry Garcia</option>
+						<option value="Micky">Micky Hart</option>
+						<option value="Phil">Phil Lesh</option>
+						</select>
+		          	</li>
+					<li>
+		        	<button type="button" class="btn btn-default" ng-click="PrintOP()">
+		        	</button>
+		        	</li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
