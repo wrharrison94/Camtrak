@@ -1,4 +1,4 @@
-angular.module('MainCtrl', []).controller('MainController', function($scope,$http) {
+angular.module('MainCtrl', []).controller('MainController', function($scope,$http,Operator) {
 
 	// $scope.tagline = 'To the moon and back!';
 	$scope.activeOperator='{{activeOperator}}';
@@ -29,7 +29,8 @@ $scope.save = function(){
 	
 	};
 	$scope.printOP = function(){
-		console.log('hello');
-		console.log($scope.activeOperator);
+		// console.log('hello');
+		// console.log($scope.activeOperator);
+		Operator.addOperator($scope.activeOperator);
 	}
 });	
