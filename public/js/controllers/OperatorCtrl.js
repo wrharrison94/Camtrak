@@ -8,20 +8,15 @@ angular.module('OperatorCtrl', []).controller('OperatorController', function($sc
 			$scope.cameras = response.data;
 		});
 	
-$scope.save = function(){
+$scope.activeOperator. = function(){
 		
-		$http.post("http://camtrak-demo-app.herokuapp.com/CameraData", $scope.camera).then(function (response){
-		console.log($scope.camera);
-		console.log("hello");
 
 			$http.get("http://camtrak-demo-app.herokuapp.com/CameraData").then(function (response,err){
 				if (err){
 					console.log(err)
-				}else{
-					alert("Your camera is being trakked!")
 				}
 				console.log(response.data);
-				$scope.cameras = response.data;
+				$scope.camera.Camera_Operator = response.data;
 			});
 
 		});
