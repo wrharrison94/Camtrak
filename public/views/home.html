@@ -6,8 +6,8 @@
   				<source src="https://ak9.picdn.net/shutterstock/videos/5540219/preview/stock-footage-vintage-film-reel-extreme-close-up.mp4" type="video/mp4">
 			</video>
 
-			<div class="shadow"></div>
-
+<!-- 			<div class="shadow"></div>
+ -->
 				<div class="data">
 
 					<div class="cameras" ng-repeat="x in cameras">
@@ -28,7 +28,7 @@
 
 							<p id=Camera_Operator><b>Operator: </b> {{x.Camera_Operator}} </p>
 
-							<button ng-click = "save()" id="delete" style="width: 100%;" type="submit" class="btn btn-default">Delete</button>
+							<button ng-click="deleteCamera(x._id)" id="delete" style="width: 100%;" class="btn btn-default">Delete</button>
 
 							</div>
 

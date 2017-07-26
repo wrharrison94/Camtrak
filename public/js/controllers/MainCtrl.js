@@ -1,5 +1,6 @@
 angular.module('MainCtrl', []).controller('MainController', function($scope,$http,Operator,$location) {
 
+
 	// $scope.tagline = 'To the moon and back!';
 	$scope.activeOperator='{{activeOperator}}';
 
@@ -27,7 +28,7 @@ $scope.save = function(){
 
 		});
 	
-	};
+	}
 	$scope.printOP = function(){
 		// console.log('hello');
 		// console.log($scope.activeOperator);
@@ -35,4 +36,26 @@ $scope.save = function(){
 		$location.path("/operator");
 
 	}
-});	
+$scope.deleteCamera = function(data){
+
+
+
+
+
+	// $http.get("http://camtrak-demo-app.herokuapp.com/CameraData", $scope.camera).then(function (response){
+	console.log('ouch');
+	console.log(data);
+	var tempobj._id=data;
+
+	// $http.post("http://camtrak-demo-app.herokuapp.com/deleteCamera", $scope.delete).then(function (response){
+
+	// $scope.cameras=response.data;
+	// console.log(response.data);
+
+
+	};
+
+});
+
+	
+
