@@ -44,9 +44,9 @@
 						<div id="all_forms" class="input-forms" style="margin: auto;">
 							<div name="input-group" style="width: 100%;">
 
-							<input id="id" type="text" class="form-control" placeholder="ID" ng-model="camera.id">
+							<!-- <input id="id" type="text" class="form-control" placeholder="ID" ng-model="camera.id">
 							</div>
-
+ -->
 							<div class="input-group" style="width: 100%;">
 						  	<input id="make" type="text" class="form-control" aria-label=# placeholder="Make" ng-model="camera.Make">
 							</div>
@@ -59,8 +59,19 @@
 						  	<input id="model" type="text" class="form-control" aria-label=# placeholder="Insured Value">
 						</div> -->
 
-							<div class="input-group" style="width: 100%;">
+							<!-- <div class="input-group" style="width: 100%;">
 						  	<input id="location" type="text" class="form-control" aria-label=# placeholder="Camera Location" ng-model="camera.Camera_Set_Location">
+							</div> -->
+
+							<div class="input-group" style="width: 100%;">
+							  <select class="form-control" id="sel2" ng-model="camera.Camera_Operator"> 
+							  	<option value="" disabled selected>Camera Location</option>
+							    <option>Sound Stage A</option>
+							    <option>Sound Stage B</option>
+							    <option>Sound Stage C</option>
+							    <option>Sound Stage D</option>
+							    <option>Sound Stage E</option>
+							  </select>
 							</div>
 <!-- 
 							<div class="input-group" style="width: 100%;">	 
