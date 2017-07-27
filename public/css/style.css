@@ -117,6 +117,16 @@ width: auto;
     left: 0;
 }
 
+@media screen and (max-width:690px){
+
+	h2#Make{
+		font-size: 2.5em;
+	}
+	h2#Model {
+		font-size: 2.5em;
+	}
+}
+
 @media screen and (max-width:610px){
 
 	h2#Make{
@@ -124,6 +134,21 @@ width: auto;
 	}
 	h2#Model {
 		font-size: 2em;
+	}
+}
+
+@media screen and (max-width:550px){
+
+	h2#Make{
+		font-size: 1.8em;
+	}
+
+	h2#Model {
+		font-size: 1.8em;
+	}
+
+	.CameraInfo p{
+		font-size: 0.8em;
 	}
 }
 
@@ -142,7 +167,7 @@ width: auto;
 	}
 }
 
-@media screen and (max-width:450px){
+@media screen and (max-width:475px){
 
 	h2#Make{
 		font-size: 1.25em;
@@ -178,6 +203,29 @@ width: auto;
 
 	.data {
 		margin-left: 219px;
+	}
+}
+
+@media screen and (max-width:420px){
+
+	h2#Make{
+		font-size: 1em;
+	}
+
+	h2#Model {
+		font-size: 1em;
+	}
+
+	.CameraInfo p{
+		font-size: 0.8em;
+	}
+
+	.data {
+		margin-left: 219px;
+	}
+
+	.data {
+		margin-left: 215px;
 	}
 }
 
