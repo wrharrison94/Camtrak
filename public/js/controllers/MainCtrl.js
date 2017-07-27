@@ -39,11 +39,12 @@ $scope.save = function(){
 $scope.deleteCamera = function(data){
 		console.log(data);
 	$http.post("http://localhost:3333/deleteCamera", {'id': data}).then(function (response,data){
-
+		
+		$http.get("http://camtrak-demo-app.herokuapp.com/CameraData").then(function (response){
+				console.log(response.data);
+				$scope.cameras = response.data;
 			});
-	$http.get("http://camtrak-demo-app.herokuapp.com/CameraData").then(function (response){
-			console.log(response.data);
-			$scope.cameras = response.data;
+	
 		});
 
 	};	
