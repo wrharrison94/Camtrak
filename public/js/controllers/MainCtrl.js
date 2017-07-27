@@ -3,16 +3,18 @@ angular.module('MainCtrl', []).controller('MainController', function($scope,$htt
 
 	// $scope.tagline = 'To the moon and back!';
 	$scope.activeOperator='{{activeOperator}}';
-
+		var config= {
+			headers: {'Access-Control-Allow-Origin': '*'}
+		}
 	// $scope.camera ={};
-		$http.get("http://camtrak-demo-app.herokuapp.com/CameraData").then(function (response){
+		$http.get("http://camtrak-demo-app.herokuapp.com/CameraData",config).then(function (response){
 			console.log(response.data);
 			$scope.cameras = response.data;
 		});
 	
 $scope.save = function(){
 		
-		$http.post("http://camtrak-demo-app.herokuapp.com/CameraData", $scope.camera).then(function (response){
+		$http.post("http://camtrak-demo-app.herokuapp.com/CameraData", $scope.camera, config).then(function (response){
 		console.log($scope.camera);
 		console.log("hello");
 
