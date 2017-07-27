@@ -19,7 +19,7 @@
 }
 
 .leftbar {
-	background: -webkit-linear-gradient(#172624, #152825);
+	background: -webkit-linear-gradient(#2a2a2a, #2a2a2a, #2a2a2a, #424242);
 	height: 100%;
 	width: auto;
 	float: left;
@@ -105,10 +105,11 @@ width: auto;
   width: auto; 
   height: auto;
   z-index: -100;
+  filter: grayscale(100%) brightness(110%) blur(10px);
 }
 
 .shadow {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 100%;
     box-shadow: inset 20px 20px 65px 20px rgba(0,0,0,0.75);
@@ -183,12 +184,12 @@ width: auto;
 
 
 .navbar {
-	background: -webkit-linear-gradient(#152825, #172624);
+	background: -webkit-linear-gradient(#424242, #2a2a2a);
 	border: 0px;
 }
 
 .navbar-header a {
-	font-size: 2.15em;
+	font-size: 2.5em;
 }
 
 button#delete {
